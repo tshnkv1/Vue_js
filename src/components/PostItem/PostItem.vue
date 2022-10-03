@@ -2,7 +2,7 @@
   <div class="post">
     <div>
       <div><strong>Name:</strong> {{ post.title }}</div>
-      <div><strong>Description:</strong> {{ post.description}}</div>
+      <div><strong>Description:</strong> {{ post.body}}</div>
     </div>
     <div class="list_btn">
       <MyButton @click="$emit('delete', post)">Delete</MyButton>
@@ -32,6 +32,10 @@ export default {
   padding: 1rem;
   border: 2px solid teal;
   margin-top: 1rem;
+}
+
+.btn {
+  margin-left: 1rem;
 }
 
 </style>
